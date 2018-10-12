@@ -1,0 +1,31 @@
+V C
+V I
+P
+S Pencil 5 1.40
+O
+A Pencil 10 1.16 
+A Pen 20 2.19 
+A Cheetos 10 4.18
+V C
+V I
+P
+O
+P
+S Pencil 5 1.40
+S Cheetos 15 5.00
+S Dishsoap 15 3.22
+P
+A Pen 15 2.59
+A Cheetos 20 5.64
+A Dishsoap 15 2.88
+A Snickers 250 1.12
+A Crackers 40 3.18
+A Soup 10 2.19
+P
+V C
+V I
+O
+S Snickers 300 2
+P
+
+

@@ -1,0 +1,229 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>CS1430 Lab 1</title></head><body>
+
+<center>
+<h2>CS 1430 - Lab 1 
+</h2></center>
+
+<ol>
+ <li><b>CS 1430 Course Materials</b> are located at K:\Courses\CSSE\CourseFiles\CS1430<br>  
+    You can access this off campus using Online Storage or from 
+	<a href="https://alpha.ion.uwplatt.edu/Files/">https://alpha.ion.uwplatt.edu/Files/</a>
+	<br> The instructions for this lab are under the Lab1 folder.
+ </li><li><b>Using File Explorer</b>:
+     Point the mouse at the Start button
+     in the lower left corner, click with the <em>right</em> mouse button, and
+     select the menu item "File Explorer". This will start up the File
+     Explorer, which allows you to look into different folders, open
+     applications, and copy, delete, or rename files and folders. </li>
+     
+<li> <strong>Labs</strong>: All labs will also be posted in folder <b>K:\Courses\CSSE\CourseFiles\CS1430\Labs</b>. </li>
+
+ <li><strong>Copying files</strong>:
+     Copy the file lab1.cpp from K:\Courses\CSSE\CourseFiles\CS1430\Labs\Lab1 to your user writable drive (<tt>J: or 
+     USB flash drive</tt>) by doing the following: 
+ <ul>
+  <li><span style="font-weight: bold;">In File Explorer</span>, Open the K: drive by clicking on the ">" to its left. </li>
+  <li>Click on View and under Show/Hide, put a check in "File name extensions".</li>
+  <li>Open the Courses folder by clicking on its ">", and continue this action through each folder.</li>
+  <li>Copy the file <tt>lab1.cpp</tt> to a user writeable drive (<tt>J: or
+      USB drive</tt>) by dragging it to
+      the desired destination drive. </li>
+  <li>Click on the destination
+      drive to verify that the file was copied. You may need to click the Refresh icon 
+	  (or press F5 to Refresh) if you don't see the file
+      listed. </li>
+  <li>Like many things in Windows, there is more than one way to copy files to a drive. 
+      Another way is to click on a file with the <em>right</em> mouse button and pick "Copy". 
+	  Then right click on the folder you want to copy it to and select &#8220;Paste&#8221;.</li>
+      <li>To access files from <span style="font-weight: bold;">Online Storage</span>, go to https://owncloud.uwplatt.edu/ and log on.&nbsp; <br>
+      </li>
+      <li><span style="font-weight: bold;"></span>Navigate to Acad1&gt;Courses&gt;CSSE&gt;CourseFiles&gt;CS1430&gt;Labs</li>
+      <li>Download the folder Lab1 to your J: or USB drive and Unzip it.<br>
+      </li>
+      
+ </ul></li>
+ <li><b>Starting Visual Studio</b>: Click on the Windows icon in
+     the lower-left corner of your screen. 
+	 Then select Visual Studio 2015.
+	 If it asks you to sign in, click <b>"Not now, maybe later."</b>
+	 When it comes up the first time, you will need to choose environment settings.
+	 Choose Visual C++ Development Settings and whatever Color Theme you want.
+	 Click "Start Visual Studio".  The first time will take a few minutes.
+	 </li>
+<li><b>Starting a New Project</b>: Click on File/New/Project.
+ <ul>
+  <li>For the Template, choose Visual C++</li>
+  <li>Under Visual C++, choose CS1430</li>
+  <li>Then in the middle pane, choose 1430Lab</li>
+  <li>For the Location, choose either J: or your flash drive.  [Use the browse button.]</li> 
+  <li>For the Name, put in something such as 1430Lab1 or Lab1</li>
+  <li>Make sure the "Create directory for Solution" is <b><u>Unchecked.</u></b></li>
+  <li>Click OK</li>
+  <li>If you get a message about trust or location, Click OK to ignore it.</li>
+ </ul></li>
+<li><b>Adding an Existing CPP file to your project:</b>  
+      Copy the file to your Project folder (see Step 4 above).
+      Then in the Solution Explorer panel of Visual Studio, right click on the Project (e.g., Lab1)
+	  and then select Add, Existing Item, and select your CPP file.
+	  It should be noted that you only need to do this for labs.
+	  When you start a Program Project, the CPP file will already exist in the project.
+</li>
+<li><b>Editing your CPP file:</b>  In the Solution Explorer panel, under Source Files, 
+       double-click on your CPP file and it will show up in the editor.
+	   This version contains errors. If you scroll through the file, you will see where
+	   the errors are - they will have a squiggly red underline.
+</li>
+<li><b>Building your project:</b>	Click Build / Build Solution.   It will produce an error list.
+       The errors will be the same ones shown with the squiggly red underlines.
+	   </li>
+<li><b>Fix the build-time (compile-time) errors:</b>  
+ <ul>
+  <li> Errors generally have associated line numbers displayed. When in the Visual Studio editor, 
+       the line number of the cursor position is displayed in the right side of the 
+	   status bar at the bottom of the editor.  If you would always like to see line numbers displayed,
+	   you can turn them on: Tools -> Options -> Text Editor -> C/C++ -> General and check "Line Numbers".
+	   
+  <li>The first error is on Line 26. It says "error C2144: syntax error: 'int' should be preceded by ';'".
+      Unfortunately, C++ error messages are often hard to understand and not very helpful.  
+	  However, a line number will always be given, so look for that and then look at that line or the lines 
+	  above it to try to find the error.
+      In this case, the semi-colon goes with the preceding statement.
+	  Put a semi-colon after tempCelsius on the preceding line.  
+	  Note that the squiggly red underline goes away.
+  </li>
+  <li> The next error is on Line 36, where is says "error C2065: 'TempFahrenheit': undeclared identifier".
+       This is saying TempFahrenheit wasn't declared.  All variables must be declared.  
+	   You may think it was declared in line 26.
+       However, C++ is case-sensitive, which means two names are the same only if all of the letters are exactly the same. 
+	   So the variable name must be exactly the same, including upper and lower case.
+       Note that on Line 26, <tt>tempFahrenheit</tt> is defined with a small t.
+	   Fix the bug by changing <tt>TempFahrenheit</tt> on line 36 to <tt>tempFahrenheit</tt>. </li>
+  </ul>
+</li>
+<li><b>Save your file:</b>  Click File / Save All.  Then Build the project again.  
+       There should be no errors.
+  </li>
+ 
+ <li><b>Running your program</b>:
+ 	 Click Debug / Start Without Debugging.  At the prompt in the command window, type 50 and press Enter.
+	 You should see that it displays 122 as temperature in Fahrenheit.
+	 Press any key to close the command window.
+	 Click Debug / Start Without Debugging again and at the prompt, type 20 and press Enter.
+	 This time, the temperature in Fahrenheit is 68.
+</li>
+
+<li><b>Using the Debugger</b>:
+    Visual Studio has a very powerful debugger that helps you find run-time errors in your program. 
+	It is very important that you become proficient in using the debugger.
+	It can save you many hours of finding and fixing errors in your programs.
+	The typical usage of a debugger is to set a <b>breakpoint</b> on a line before the area where you think there could be an error.
+	Then do a Debug Run.  It will stop on the line with the breakpoint, just before executing that line.
+	You then set up a <b>watch</b> for each of the relevant variables and then use <b>Step Into</b> and <b>Step Over</b> to 
+	execute the program one line at a time, checking the values of the watch variables after each step to see if they are those expected.
+	Follow the steps below to get a feeling for how you should proceed in a debugging session.
+
+<ul>
+  <li>Set a breakpoint on Line 29. There are at least three ways to do this.  
+      The easiest is to click in the bluish-grey area to the left of line.  
+      Another way is to put the cursor on the line and press F9.
+	  A third way is to put the cursor on the line and click Debug -> Toggle Breakpoint.
+	  In any case, a red dot will appear in the bluish-grey area to the left of line,
+	  which is how you can tell if there is a breakpoint on the line.
+  </li>
+  <li>Set another breakpoint at Line 48 (the return 0 statement).</li>
+  <li>Click Debug -> Start Debugging. The program will run and stop at the breakpoint.
+      The red dot will have a small arrow in it.
+      The prompt line has not been executed.  You can see that by clicking on the running 
+	  debug command window in the task bar, and noting nothing is displayed in it.
+	  Click back on Visual Studio in the task bar.
+  </li>
+  <li>Click Debug -> Step Over (or Press F10). 
+      The arrow in the bluish-grey area advances to the next line.
+	  Switch to the debug command window and see that the prompt line has displayed,
+	  meaning the prompt line has been executed.
+  </li>
+  <li>Switch back to Visual Studio and click Debug -> Step Over (or Press F10) again.
+      Now the program appears to "hang".  
+	  It is waiting for you to enter a number so the input (cin) line can be executed.  
+	  Switch to the debug command window, type 50, and press Enter.
+	  Switch back to Visual Studio.   The arrow has advanced to the next line.
+  </li>
+  <li>
+  If it isn't already showing, display the "Locals" window, which shows the local variables.  
+  You can do this by selecting Debug -> Windows -> Locals.  This displays the (local) variables.  
+  Note that tempCelcius has a value of 50.  
+  The other two variables have values that don't appear to make sense.
+  That is because they haven't been assigned yet, so their values are "garbage".
+  </li>
+  Click Debug -> Step Over (or Press F10).  
+  <b>Note the value that intermedCalc now has.  You will use that value later.</b>
+  <li>
+  Click Debug -> Step Over (or Press F10).  
+  Observe that tempFahrenheit now has a value of 122, as expected.
+  So in this case, there doesn't appear to be any bugs.
+  </li>
+  <li>Click Debug -> Continue (or Press  F5).  The arrow is now at the line 48.
+      Switch to the debug command window and note that all the output is displayed.
+	  Switch back to Visual Studio, Press F5, and execution is complete.
+	  When you do a Debug -> Start Debugging, the debug command window disappears when it is done.
+  </li>
+  <li>Enter the value of intermedCalc from above, in place of the 99 on line 46.</li>
+  <li>Click Debug / Start Without Debugging.  Note that it doesn't stop at breakpoints.
+      At the prompt, type 50.
+	  Note that the number you typed in at line 46 appears as the last line of output.
+  </li>
+</ul>
+</li>  
+ <li><b>Reopening your project:</b> Do a Save All in Visual Studio, then close down Visual Studio.  You can reopen the project/solution in at least two ways:
+<ul>
+  <li>Method 1: In File Explorer, navigate to your project folder and double-click on the file with the extension <b>sln</b>.  Note that sln is short for ""solution". </li>
+  <li>Method 2: Start Visual Studio. If you see the Project under Recent, you can click on it.  Otherwise, click File->Open->Project/Solution.  
+      A File Explorer comes up.  Navigate to your Project folder and select the file with the <b>sln</b> extension.
+</ul>
+<li><b>Submitting your program to the Grader:</b> When you're finished testing your program on your own
+     inputs, submit it to the grader. For labs, you must have 0 output errors
+     to receive credit. To submit your program: 
+<ul>
+<li>Do a Save All in Visual Studio</li>
+<li>Open a web browser and go to:  
+      <a href="https://alpha.ion.uwplatt.edu/grader">https://alpha.ion.uwplatt.edu/grader</a> </li> 
+<li>Enter your UW-Platteville login name, password, and select 1430 as the course.</li>
+<li>Click the Login button</li>
+<li>Select the Program or Lab.  For this Lab, select Lab1.</li>
+<li>Browse to your <b>CPP</b> file (where you copied it to in Step 7.)</li>
+<li>Click Submit.</li>
+<li>A partial list of results will be shown and an email will be sent to you with the full results.</li>
+<li>Look at the number of differences reported.  It should be 2.
+    Normally, each output error will result in two or more differences, since the Grader reports
+	how to change from your output to the correct output.</li>
+<li>Scroll through the results. You will see "Your Output", then you will see the "Correct Output",
+    then you will see "how to change your output to the correct output."
+	If you look closely at this, you can usually see what is wrong.
+	The "Insert" is what the output should be, the "Delete" is what you program outputted.
+	You should see:
+<pre>
+Insert after Line 0: Enter an integer temperature in Celsius:
+Delete Line       1: Enter an integer temperature in Calculus:
+</pre>
+If you look closely, you will see that Calculus was put in place of Celsius.
+</li>
+<li>Log into your UWP email and open the results file sent to you by the "Grader".  Look at the extra information it has.</li>
+<li>If you are using Edge or Explorer, you need to close the browser since it locks the CPP file you submitted until the browser is closed.</li>
+<li>Go back to Visual Studio and try to find and fix the errors.  
+    Look at line 29 and change "Calculus" to "Celsius".
+</li>	
+<li>Save, Build and Run again to make sure it still runs okay.</li>
+<li>Submit to the Grader again.  You should get 0 differences.
+    If not, try looking at it again.
+	If you can't figure out the errors, seek help from your instructor or a lab consultant.
+</li>
+</ul>
+</li>
+ <li><b>Shutting Down</b>: Before
+     leaving, be sure to shut down all programs and log off the computer.
+ </li>
+</ol>
+If you have any questions, please ask the lab assistant or your instructor!
+
+</body></html>

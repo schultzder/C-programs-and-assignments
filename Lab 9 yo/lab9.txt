@@ -1,0 +1,100 @@
+             CS 1430 - Lab 9  Array List
+                             (5 points)
+Due: Apr 13, 2017 by 5pm
+Grace due: Apr 19, 2017 by 5pm
+
+Begin by copying lab9.cpp to your J:\ drive. This contains the starting point of a program which, 
+when completed, will maintain a list of baseball teams. Your program will read and process commands
+from the standard input until end-of-file. Commands consist of a single character, possibly
+followed by parameters.
+
+The commands you are to implement are of the form:
+
+	A team
+ 	D team
+	P
+	S 
+
+
+1. A - Add a team, making sure the list isn't full and the team doesn’t already exist in the team
+array. Add a new team to the end of the list. If the team already exists, don't add.  If the list 
+is full, don't add.  In all cases, print a message. Team has no spaces. 
+
+2. D – Delete team from the array if it exists.  In either case, print a message. Replace the 
+deleted team with the last team in the list.
+
+3. P – Print the list of teams.
+
+4. S – Sort command. Sort it in ascending order (A - Z).  Print a message in either case.
+
+
+
+It repeats this process until 
+end-of-file: Use Ctrl-Z in Visual Studio for end-of-file.
+
+Copy the file lab9.cpp to your J:\ drive or flash drive. 
+
+The places you will need to modify are marked by "DO:" and numbered. BE SURE you don't make any 
+other modifications to the file other than those marked by "DO:". For your convenience, the 
+"DO:"s are marked with the order we recommend you tackle the problems.
+
+
+Sample Run Input:
+
+P
+A ChicagoCubs
+A MinnesotaTwins
+A MilwaukeeBrewers
+A ChicagoWhiteSox
+P
+X
+A DetroitTigers
+A NewYorkYankees
+A BostonRedSox
+D KansasCityRoyals
+D MilwaukeeBrewers
+P
+S
+P
+A ChicagoCubs
+P
+
+Sample Run Output:
+
+The list of team is:
+ChicagoCubs was added to the list.
+MinnesotaTwins was added to the list.
+MilwaukeeBrewers was added to the list.
+ChicagoWhiteSox was added to the list.
+The list of team is:
+   ChicagoCubs         
+   MinnesotaTwins      
+   MilwaukeeBrewers    
+   ChicagoWhiteSox     
+Bad Command!
+DetroitTigers was added to the list.
+NewYorkYankees was added to the list.
+BostonRedSox wasn't added. List is full.
+KansasCityRoyals was not removed because it is not in the list.
+MilwaukeeBrewers was removed from the list.
+The list of team is:
+   ChicagoCubs         
+   MinnesotaTwins      
+   NewYorkYankees      
+   ChicagoWhiteSox     
+   DetroitTigers       
+List sorted by team.
+The list of team is:
+   ChicagoCubs         
+   ChicagoWhiteSox     
+   DetroitTigers       
+   MinnesotaTwins      
+   NewYorkYankees      
+ChicagoCubs is already in the list.
+The list of team is:
+   ChicagoCubs         
+   ChicagoWhiteSox     
+   DetroitTigers       
+   MinnesotaTwins      
+   NewYorkYankees      
+Normal Termination of Lab 9.

@@ -1,0 +1,3 @@
+﻿  Quiz53.cpp
+j:\c++\quiz53.cpp(170): warning C4244: '=': conversion from 'const float' to 'int', possible loss of data
+  Quiz 5-3.vcxproj -> J:\C++\Quiz 5-3\Debug\Quiz 5-3.exe

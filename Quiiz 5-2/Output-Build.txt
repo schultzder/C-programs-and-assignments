@@ -1,0 +1,7 @@
+﻿1>------ Build started: Project: Quiiz 5-2, Configuration: Debug Win32 ------
+1>  Quiz5-2.cpp
+1>j:\c++\quiz5-2.cpp(145): warning C4700: uninitialized local variable 'i' used
+1>j:\c++\quiz5-2.cpp(96): warning C4700: uninitialized local variable 'i' used
+1>j:\c++\quiz5-2.cpp(148): warning C4700: uninitialized local variable 'i' used
+1>  Quiiz 5-2.vcxproj -> J:\C++\Quiiz 5-2\Debug\Quiiz 5-2.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

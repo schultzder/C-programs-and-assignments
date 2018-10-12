@@ -1,0 +1,7 @@
+Scotty13 WI
+      Item    Number     Price     Total
+       Pen         0      2.19     15.33
+Subtotal:     38.53
+Tax:      1.93
+Shipping:      5.50
+Total:     45.96

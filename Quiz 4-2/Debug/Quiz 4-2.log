@@ -1,0 +1,5 @@
+﻿  Quiz4-2.cpp
+j:\c++\quiz4-2.cpp(72): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+j:\c++\quiz4-2.cpp(77): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+j:\c++\quiz4-2.cpp(83): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Quiz 4-2.vcxproj -> J:\C++\Quiz 4-2\Debug\Quiz 4-2.exe

@@ -1,0 +1,5 @@
+﻿  lab4.cpp
+k:\courses\csse\coursefiles\cs1430\labs\lab4.cpp(85): error C2059: syntax error: ')'
+k:\courses\csse\coursefiles\cs1430\labs\lab4.cpp(86): error C2143: syntax error: missing ';' before '{'
+k:\courses\csse\coursefiles\cs1430\labs\lab4.cpp(90): error C2065: 'total_value': undeclared identifier
+k:\courses\csse\coursefiles\cs1430\labs\lab4.cpp(95): error C2065: 'total_value': undeclared identifier

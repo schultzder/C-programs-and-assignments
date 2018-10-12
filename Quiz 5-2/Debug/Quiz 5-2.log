@@ -1,0 +1,4 @@
+﻿  Quiz5-2.cpp
+j:\c++\quiz 5-2\quiz5-2.cpp(143): warning C4101: 'i': unreferenced local variable
+j:\c++\quiz 5-2\quiz5-2.cpp(96): warning C4700: uninitialized local variable 'i' used
+  Quiz 5-2.vcxproj -> J:\C++\Quiz 5-2\Debug\Quiz 5-2.exe

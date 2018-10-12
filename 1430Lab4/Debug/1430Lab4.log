@@ -1,0 +1,10 @@
+﻿  Quiz1-2.cpp
+j:\c++\quiz1-2.cpp(26): error C2065: 'cout': undeclared identifier
+j:\c++\quiz1-2.cpp(26): error C2146: syntax error: missing ';' before identifier 'cout'
+j:\c++\quiz1-2.cpp(30): error C2065: 'cout': undeclared identifier
+j:\c++\quiz1-2.cpp(38): error C2065: 'cout': undeclared identifier
+j:\c++\quiz1-2.cpp(38): error C2563: mismatch in formal parameter list
+j:\c++\quiz1-2.cpp(38): error C2568: '<<': unable to resolve function overload
+  j:\c++\quiz1-2.cpp(38): note: could be 'std::basic_ostream<_Elem,_Traits> &std::endl(std::basic_ostream<_Elem,_Traits> &)'
+j:\c++\quiz1-2.cpp(44): error C2065: 'cout': undeclared identifier
+j:\c++\quiz1-2.cpp(44): error C2065: 'total': undeclared identifier

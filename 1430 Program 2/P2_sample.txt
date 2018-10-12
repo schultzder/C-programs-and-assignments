@@ -1,0 +1,30 @@
+Scotty13 WI
+20 1.16 Pencil
+7 2.19 Pen
+0
+Suzy228 IA
+2 489.20 TV
+1 287 Treadmill
+10 4.18 Cheetos
+2 269.99 Camera
+0
+Frannie65 IL
+1 49.99 Curtain
+0
+Jackie90 WI
+1 99.99 Sealant
+0
+Jimmie34 FL
+1 11.84 DartTips
+4 5.97 BathRug
+0
+Allie58 CA
+1 50 CrockPot
+1 49.99 Roaster
+0
+Sally912 IL
+4 49.99 Jeans
+2 29.76 Lamp
+1 11.97 Monopoly
+2 134.37 Expresso
+0
